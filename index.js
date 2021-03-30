@@ -4,7 +4,7 @@ const url = 'http://api.weatherstack.com/current?access_key=a0b5a0610fc1eb8fa3a8
 
 const processData = (data) => {
   const { current: { weather_descriptions, temperature }, location: { name } } = data
-  console.log(`It's currently ${weather_descriptions[0]} in ${name},  with ${temperature > 0 ? '+' : '-'}${temperature}.`)
+  console.log(`It's currently ${weather_descriptions[0]} in ${name}, with ${temperature > 0 && '+'}${temperature} degrees Celsius.`)
 }
 
 const req = http.request(url, (res) => {
