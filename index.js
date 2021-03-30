@@ -19,8 +19,6 @@ const req = http.request(url, (res) => {
     parsed = JSON.parse(data);
     processData(parsed);
   })
-
-
 })
 
 req.on('error', e => console.error(e));
