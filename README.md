@@ -10,18 +10,18 @@ Using HTTP core module we have to create a server that will listen to 8080 port.
 (https://nodejs.org/en/knowledge/HTTP/servers/how-to-create-a-HTTP-server/)
 2. Create an endpoint to read all notes using the GET method (ex: http://localhost: 8080/notes)
 3. Create an endpoint to create a note using the POST method
-4. Create an endpoint to return notes by arg (title) using the GET method (eg http://localhost: 8080/:title)
-5. Create an endpoint to delete a note by arg (title) using the DELETE method (eg http://localhost: 8080 /:title)
-6. Create an endpoint to update a note by arg (title) using the PUT method (eg http://localhost: 8080/:title)
+4. Create an endpoint to return notes by arg (id) using the GET method (eg http://localhost: 8080/:id)
+5. Create an endpoint to delete a note by arg (id) using the DELETE method (eg http://localhost: 8080 /:id)
+6. Create an endpoint to update a note by arg (id) using the PUT method (eg http://localhost: 8080/:id)
 
 ---
 
 #### Here are the endpoints that we have to implement using specific HTTP methods:
 - /notes			     GET			  Get	All notes
 - /notes			     POST		    Add new note
-- /notes/:title		 GET			  Get a note by title
-- /notes/:title		 DELETE		  Delete a note
-- /notes/:title		 PUT			  Update by title
+- /notes/:id		   GET			  Get a note by id
+- /notes/:id		   DELETE		  Delete a note
+- /notes/:id		   PUT			  Update by id
 
 ---
 
