@@ -12,6 +12,14 @@ const requestListener = function (req, res) {
         const value = db.get()
         res.write(JSON.stringify(value));
         break;
+        case "POST":
+          req.on("data",(body)=>{
+              const data = body.toString();
+              const parsedData = JSON.parse(data)
+              db.add(parsedData)
+              res.write("Added Note with success")
+          })
+           break
       default:
         console.log('in default')
     }
