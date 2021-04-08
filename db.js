@@ -58,7 +58,7 @@ class DB {
    * @param {Note} note
    */
   add(note) {
-    if (!note?.title || !note?.content) {
+    if (!(note && note.title) || !(note && note.content)) {
       console.error('Note should contain "title" and "content" fields.');
 
       return null;
@@ -126,7 +126,7 @@ class DB {
    * @returns UpdatedNote | null
    */
   update(note) {
-    if (!note?.title || !note?.content) {
+    if (!(note && note.title) || !(note && note.content)) {
       console.error('[UPDATE] "title" and "content" should be provided.');
     } else {
       const notes = this.readSafeFile();
