@@ -4,7 +4,7 @@
   "description": "We have to create REST API (CRUD) that allows us to Create, Read, Update and Delete notes from file.\r Using HTTP core module we have to create a server that will listen to 8080 port.",
   "main": "index.js",
   "scripts": {
-    "nodemon": "nodemon index.js",
+    "nodemon": "nodemon database.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,6 +19,9 @@
   },
   "homepage": "https://github.com/Endava-NodeJS/nodejs-coremodules-practic-4#readme",
   "dependencies": {
-    "nodemon": "^2.0.7"
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7",
+    "sqlite": "^4.0.21",
+    "sqlite3": "^5.0.2"
   }
 }
