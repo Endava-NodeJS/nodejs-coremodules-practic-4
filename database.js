@@ -6,8 +6,15 @@ const server = async () => {
     filename: "./tmp/database.db",
     driver: sqlite3.Database,
   });
-  db.exec(
+  const title = 'Test2 Title';
+  const content = 'test content';
+  await db.exec(
     "CREATE TABLE IF NOT EXISTS todo (title TEXT UNIQUE, content TEXT, id INTEGER NOT NULL PRIMARY KEY)"
+  );
+  await db.run(
+    'INSERT INTO todo(title, content) values(?, ?)',
+      title,
+      content,
   );
 };
 
