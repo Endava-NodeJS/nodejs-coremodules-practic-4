@@ -19,4 +19,3 @@ const server = async () => {
 };
 
 server();
-
