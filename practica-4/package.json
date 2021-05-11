@@ -1,0 +1,22 @@
+{
+  "name": "practica-4",
+  "version": "1.0.0",
+  "description": "In this lesson we’ll learn how to implement authorization functionality creating NodeJS API. It will be based on our previously created API (notes CRUD).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "express": "^4.17.1",
+    "joi": "^17.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "nodemon": "^2.0.7",
+    "sequelize": "^6.6.2",
+    "sqlite3": "^5.0.2"
+  }
+}
